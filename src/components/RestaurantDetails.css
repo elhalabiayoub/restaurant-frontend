@@ -1,0 +1,16 @@
+.restaurantdetailsimages {
+	width: 100%;
+	margin: 10px auto;
+	display: flex;
+	overflow-x: scroll;
+}
+.restaurantdetailsimages img {
+	flex: 1;
+	min-width: 200px;
+	max-width: 300px;
+	height: auto;
+	max-height: 150px;
+	object-fit: cover;
+	border-radius: 10px;
+	border: solid 1px lightgoldenrodyellow;
+}

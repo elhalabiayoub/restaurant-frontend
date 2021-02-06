@@ -1,0 +1,145 @@
+.login {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	background-color: rgb(20, 33, 61);
+	display: grid;
+	place-items: center;
+	font-family: "Inter", sans-serif;
+	position: fixed;
+	overflow-y: auto;
+}
+
+.login__content {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	border-radius: 40px;
+	width: 500px;
+	height: 500px;
+	justify-content: center;
+	align-items: center;
+}
+
+.login__welcome {
+	text-align: center;
+	width: 100%;
+}
+.login__welcome > h6 {
+	margin-top: 10px;
+	padding-top: 0;
+	margin-bottom: 0;
+	font-size: 3.5em;
+	font-weight: bold;
+	line-height: 38.5px;
+}
+.login__welcome > p {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 22.4px;
+	color: grey;
+}
+
+.login__form {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	height: 250px;
+	justify-content: center;
+}
+.login__form > div {
+	display: flex;
+	margin: auto;
+	margin-top: 20px;
+	height: 50px;
+	width: 100%;
+	border-radius: 15px;
+	border: 1px solid rgb(128, 128, 128, 0.5);
+	position: relative;
+	transition: hover 0.4s;
+}
+.login__form > div:hover {
+	border: 1px solid rgb(128, 128, 128, 1);
+}
+.login__form > div:hover .icon {
+	color: rgb(128, 128, 128, 1);
+}
+.login__form > div > input {
+	margin-left: 60px;
+	border: none;
+	width: 75%;
+	font-size: 20px;
+}
+.login__form > div > input::placeholder {
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 100px;
+	color: rgb(128, 128, 128, 0.6);
+}
+.login__form > div > input:focus {
+	outline: none;
+}
+
+.login__form > div:focus-within {
+	border: 1px solid rgb(0, 102, 255);
+}
+.icon:focus-within {
+	border: 1px solid rgb(0, 102, 255);
+}
+/*.login__form > div input:focus {
+	border: 1px solid rgb(0, 102, 255);
+}*/
+.icon {
+	position: absolute;
+	top: 20%;
+	font-size: 30px !important;
+	transition: hover 0.4s;
+	margin: 0 20px;
+	color: rgb(128, 128, 128, 0.6);
+}
+.login__form > div > input:focus + .icon {
+	color: rgb(0, 102, 255);
+}
+.login__form > button {
+	margin: auto;
+	margin-top: 20px;
+	width: 90%;
+	height: 50px;
+	cursor: pointer;
+	border-radius: 10px;
+	color: white;
+	background-color: rgb(0, 102, 255);
+	border: 1px solid grey;
+	font-size: 20px;
+	font-weight: 400px;
+}
+.login__form > button:hover {
+	background-color: rgb(5, 83, 199);
+}
+.login__form > button:focus {
+	outline: none;
+}
+.login__content > hr {
+	width: 99%;
+	margin: 10px;
+}
+
+.login__extraLinks {
+	text-align: center;
+}
+
+.login__extraLinks > p {
+	margin: 1px;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 25.5px;
+}
+
+.login__extraLinks > p > a {
+	color: rgb(0, 102, 255);
+	cursor: pointer;
+	margin-left: 5px;
+}
+.login__extraLinks > p > a:hover {
+	text-decoration: underline;
+}

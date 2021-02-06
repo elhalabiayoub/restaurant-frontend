@@ -1,0 +1,11 @@
+.review {
+	width: 60vw;
+	margin: 10px auto;
+	display: flex;
+	align-items: flex-start;
+	border-bottom: solid 1px grey;
+}
+
+.review__content {
+	margin-left: 20px;
+}

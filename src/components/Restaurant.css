@@ -1,0 +1,23 @@
+.restaurant {
+	width: 99%;
+	height: 100px;
+	display: flex;
+	margin: 20px;
+	border-bottom: solid 2px grey;
+	cursor: pointer;
+	color: black;
+}
+a {
+	text-decoration: none;
+}
+.restaurant:hover {
+	background-color: rgba(211, 211, 211, 0.261);
+}
+
+.restaurant__image > img {
+	width: 150px;
+	object-fit: cover;
+}
+.restaurant__infos {
+	margin-left: 20px;
+}

@@ -1,0 +1,190 @@
+.register {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	position: fixed;
+	overflow-y: auto;
+	background-color: rgb(20, 33, 61);
+	display: grid;
+	place-items: center;
+	font-family: "Inter", sans-serif;
+}
+
+.register__content {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	border-radius: 40px;
+	width: 500px;
+	height: 600px;
+	justify-content: center;
+	align-items: center;
+}
+
+.register__joinUs {
+	text-align: center;
+	width: 100%;
+}
+.register__joinUs > h6 {
+	margin-top: 20px;
+	padding-top: 0;
+	margin-bottom: 0;
+	font-size: 3.5em;
+	font-weight: bold;
+	line-height: 38.5px;
+}
+.register__joinUs > p {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 22.4px;
+	color: grey;
+}
+
+.register__form {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	height: 350px;
+	justify-content: center;
+}
+.register__form > div {
+	display: flex;
+	margin: auto;
+	margin-top: 20px;
+	height: 50px;
+	width: 100%;
+	border-radius: 15px;
+	border: 1px solid rgb(128, 128, 128, 0.5);
+	position: relative;
+	transition: all 0.7s;
+}
+.register__form > div:hover {
+	border: 1px solid rgb(128, 128, 128, 1);
+}
+.register__form > div:hover .icon {
+	color: rgb(128, 128, 128, 1);
+}
+.register__form > div > input {
+	margin-left: 60px;
+	border: none;
+	width: 75%;
+	font-size: 20px;
+}
+.register__form > div > input::placeholder {
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 100px;
+	color: rgb(128, 128, 128, 0.6);
+}
+.register__form > div > input:focus {
+	outline: none;
+}
+
+.register__form > div:focus-within {
+	border: 1px solid rgb(0, 102, 255);
+}
+.icon:focus-within {
+	border: 1px solid rgb(0, 102, 255);
+}
+/*.register__form > div input:focus {
+	border: 1px solid rgb(0, 102, 255);
+}*/
+.icon {
+	position: absolute;
+	top: 20%;
+	font-size: 30px !important;
+	transition: all 0.7s !important;
+	margin: 0 20px;
+	color: rgb(128, 128, 128, 0.6);
+}
+.register__form > div > input:focus + .icon {
+	color: rgb(0, 102, 255);
+}
+
+.register__formCheckBox {
+	position: relative;
+	padding-left: 35px;
+	margin: 20px 0;
+}
+.register__formCheckBox input {
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+	cursor: pointer;
+}
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: white;
+	border: 1px solid rgb(128, 128, 128, 0.6);
+	cursor: pointer;
+	border-radius: 5px;
+	transition: all 0.7s;
+}
+/* On mouse-over, add a grey background color */
+.register__formCheckBox:hover input ~ .checkmark {
+	border: 1px solid rgb(128, 128, 128, 1);
+}
+
+/* When the checkbox is checked, add a blue background */
+.register__formCheckBox input:checked ~ .checkmark {
+	background-color: rgb(0, 102, 255);
+	border: none;
+}
+
+.checkIcon {
+	display: none !important;
+}
+.register__formCheckBox input:checked + .checkmark > .checkIcon {
+	display: block !important;
+	color: white;
+}
+.register__form > button {
+	margin: auto;
+	margin-top: 5px;
+	width: 100%;
+	height: 80px;
+	cursor: pointer;
+	border-radius: 10px;
+	color: white;
+	background-color: rgb(0, 102, 255);
+	border: 1px solid grey;
+	font-size: 20px;
+	font-weight: 400px;
+}
+.register__form > button:hover {
+	background-color: rgb(5, 83, 199);
+}
+.register__form > button:focus {
+	outline: none;
+}
+.register__content > hr {
+	width: 99%;
+	margin-top: 20px;
+}
+
+.register__extraLinks {
+	text-align: center;
+}
+
+.register__extraLinks > p {
+	margin-top: 20px;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 25.5px;
+}
+
+.register__extraLinks > p > a,
+.register__formCheckBox > a {
+	color: rgb(0, 102, 255);
+	cursor: pointer;
+	margin-left: 5px;
+}
+.register__extraLinks > p > a:hover,
+.register__formCheckBox > a:hover {
+	text-decoration: underline;
+}

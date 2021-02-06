@@ -1,0 +1,22 @@
+.navbar {
+	width: 100%;
+	height: fit-content;
+	background-color: rgba(49, 138, 221, 0.788);
+}
+.navbar__items {
+	display: flex;
+	justify-content: space-around;
+	margin: auto;
+}
+.navbar__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	width: 70px;
+}
+
+.navbar__item:hover {
+	background-color: rgb(152, 201, 233);
+}

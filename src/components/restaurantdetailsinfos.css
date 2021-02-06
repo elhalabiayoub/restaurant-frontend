@@ -1,0 +1,13 @@
+.restaurantdetailsinfos {
+	padding: 30px;
+}
+
+.restaurantdetailsinfos__item {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	border-bottom: solid 2px grey;
+}
+.restaurantdetailsinfos__item > p {
+	margin-left: 10px;
+}
