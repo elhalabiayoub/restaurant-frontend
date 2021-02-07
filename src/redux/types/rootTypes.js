@@ -1,0 +1,10 @@
+export const POSTUSER = "POSTUSER";
+export const GETMEMBERS = "GETMEMBERS";
+export const GETUSER = "GETUSERS";
+export const GETROOMS = "GETROOMS";
+export const GETROOM = "GETROOM";
+export const GETMESSAGES = "GETMESSAGES";
+export const ADDMESSAGE = "ADDMESSAGE";
+export const USERLOGOUT = "USERLOGOUT";
+export const ADDLASTMESSAGE = "ADDLASTMESSAGE";
+export const UPDATEROOM = "UPDATEROOM";
